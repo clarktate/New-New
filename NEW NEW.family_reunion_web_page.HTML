@@ -4,110 +4,121 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Family Reunion</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #faefe3;
       margin: 0;
       padding: 0;
-      background-image: url('family-reunion-background.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      color: #4a3b2f;
     }
+
     header {
-      background-color: rgba(74, 111, 165, 0.9);
+      background-color: #8c5e3c;
       color: #fff;
-      padding: 20px;
+      padding: 25px;
       text-align: center;
     }
+
+    .banner-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 25px;
+      color: #8c5e3c;
+    }
+
+    .banner {
+      text-align: center;
+      margin: 15px 0 30px 0;
+    }
+
+    .banner img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .register-btn {
+      background-color: #8c5e3c;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .register-btn:hover {
+      background-color: #724a2f;
+    }
+
     .container {
       max-width: 900px;
       margin: 20px auto;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      border-radius: 8px;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     h2 {
-      color: #4a6fa5;
+      color: #8c5e3c;
     }
-    .info p {
-      line-height: 1.6;
-    }
-    form {
-      margin-top: 20px;
-    }
-    label {
-      display: block;
+
+    .rsvp-note {
       margin-top: 10px;
-      font-weight: bold;
+      font-style: italic;
+      color: #000000;
     }
-    input, select, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-    button {
-      margin-top: 15px;
-      background-color: #4a6fa5;
-      color: #fff;
-      border: none;
-      padding: 10px 15px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #3b5c8a;
-    }
+
     footer {
       text-align: center;
       padding: 15px;
       font-size: 14px;
-      color: #555;
+      color: #5a4a3a;
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <h1>Clark/Tate Family Reunion 2026</h1>
-    <p>We can’t wait to celebrate together!</p>
   </header>
+
+  <div class="banner-title">Generations Bridging the Gap</div>
+
+  <div class="banner"></div>
+
+  <!-- Register Button -->
+  <div style="text-align:center;">
+    <a href="#registration-form" class="register-btn">Register Now</a>
+  </div>
 
   <div class="container">
     <section class="info">
       <h2>Reunion Details</h2>
       <p><strong>Date:</strong> October 9 - 10, 2026</p>
-      <p><strong>Location:</strong> City, Mississippi</p>
-      <p><strong>Hotel:</strong> To be announced</p>
-      <p><strong>Planned Activities:</strong></p>
-      <ul>
-        <li>Welcome Dinner</li>
-        <li>Family Picnic & Games</li>
-        <li>Banquet & Dance</li>
-      </ul>
-      <p>Please check this page regularly for updates.</p>
+      <p><strong>Location:</strong> Mississippi</p>
     </section>
 
-    <section class="rsvp">
+    <!-- Embedded Google Form Section -->
+    <section class="rsvp" id="registration-form">
       <h2>Family Registration Form</h2>
 
       <p class="rsvp-note"><strong><em>Please RSVP by March 15, 2026</em></strong></p>
 
-      <div class="form-embed">
-        <iframe 
-          src="https://docs.google.com/forms/d/e/1FAIpQLSezK_RoMxh_w2AytHRijw41QPm3Z79LEt97Pih4PpgPUqQ2lg/viewform?embedded=true" 
-          width="100%" 
-          height="1125" 
-          frameborder="0" 
-          marginheight="0" 
-          marginwidth="0">
-          Loading…
-        </iframe>
-      </div>
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSezK_RoMxh_w2AytHRijw41QPm3Z79LEt97Pih4PpgPUqQ2lg/viewform?embedded=true"
+        width="100%"
+        height="1200"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+      </iframe>
     </section>
   </div>
 
